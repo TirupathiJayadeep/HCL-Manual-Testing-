@@ -10,6 +10,6 @@ for i in range(1,len(lst)):
     if lst[i]<0:
         currentmax,currentmin=currentmin,currentmax
     currentmax=max(lst[i],currentmax*lst[i])
-    currentmin=max(lst[i],currentmin*lst[i])
+    currentmin=min(lst[i],currentmin*lst[i])
     maximum=max(maximum,currentmax)
 print(maximum)
